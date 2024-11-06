@@ -1,0 +1,156 @@
+/* Reset default margins, paddings, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Header Section (Profile) */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile {
+  margin-top: 20px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile h1 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+.profile p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* About Section */
+#about {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#about p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Projects Section */
+#projects {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+  }
+}
